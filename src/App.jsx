@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { useCampus } from './context/CampusContext'
 import LandingScreen from './components/LandingScreen'
 import ChatBot from './components/ChatBot'
@@ -254,6 +255,9 @@ function App() {
 
       {/* ChatBot FAB */}
       <ChatBot />
+
+      {/* Vercel Analytics */}
+      <Analytics />
 
       {/* Safe area spacer */}
       <style>{`
