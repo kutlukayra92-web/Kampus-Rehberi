@@ -1,0 +1,209 @@
+{
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "Bilişim Atölyesi",
+      "type": "workshop",
+      "floor": 1,
+      "description": "Siber güvenlik ve yazılım geliştirme laboratuvarı. 24 adet bilgisayar, akıllı tahta ve projeksiyon sistemi mevcuttur.",
+      "equipment": ["3D Yazıcı", "Raspberry Pi Seti", "Arduino Kitleri", "Akıllı Tahta"],
+      "capacity": 24,
+      "icon": "Monitor"
+    },
+    {
+      "id": "room-2",
+      "name": "Elektrik Atölyesi",
+      "type": "workshop",
+      "floor": 1,
+      "description": "Elektrik-elektronik devre tasarımı ve otomasyon sistemleri atölyesi. Endüstriyel ekipmanlarla donatılmıştır.",
+      "equipment": ["CNC Tezgahı", "Osiloskop", "PLC Eğitim Seti", "Lehim İstasyonları"],
+      "capacity": 20,
+      "icon": "Zap"
+    },
+    {
+      "id": "room-3",
+      "name": "9-A Sınıfı",
+      "type": "classroom",
+      "floor": 2,
+      "description": "Bilişim Teknolojileri alanı 9. sınıf dersliği. 28 öğrenci kapasiteli, akıllı tahta donanımlı.",
+      "equipment": ["Akıllı Tahta", "Projeksiyon", "Öğrenci Dolapları"],
+      "capacity": 28,
+      "icon": "BookOpen"
+    },
+    {
+      "id": "room-4",
+      "name": "Kantin",
+      "type": "social",
+      "floor": 0,
+      "description": "Öğrenci ve personel yemekhanesi. Sıcak-soğuk yiyecek ve içecek hizmeti, oturma alanı mevcuttur.",
+      "equipment": ["Yemek Tezgahı", "Soğutucular", "Oturma Alanı (60 kişi)"],
+      "capacity": 60,
+      "icon": "Coffee"
+    },
+    {
+      "id": "room-5",
+      "name": "Müdür Odası",
+      "type": "admin",
+      "floor": 2,
+      "description": "Okul müdürü makam odası. İdari toplantılar ve resmi görüşmeler için kullanılır.",
+      "equipment": ["Toplantı Masası", "Akıllı Ekran", "Misafir Oturma Alanı"],
+      "capacity": 8,
+      "icon": "Briefcase"
+    },
+    {
+      "id": "room-6",
+      "name": "Kütüphane",
+      "type": "social",
+      "floor": 0,
+      "description": "Okul kütüphanesi. 5000+ basılı kaynak, dijital erişim terminalleri ve sessiz çalışma alanları.",
+      "equipment": ["Dijital Katalog Terminali", "Çalışma Masaları", "Fotokopi Makinesi"],
+      "capacity": 40,
+      "icon": "Library"
+    },
+    {
+      "id": "room-7",
+      "name": "Konferans Salonu",
+      "type": "social",
+      "floor": 2,
+      "description": "150 kişilik konferans ve seminer salonu. Ses sistemi, sahne ve geniş projeksiyon perdesi bulunur.",
+      "equipment": ["Ses Sistemi", "Sahne", "Projeksiyon Perdesi", "Klima Sistemi"],
+      "capacity": 150,
+      "icon": "Presentation"
+    },
+    {
+      "id": "room-8",
+      "name": "Rehberlik Servisi",
+      "type": "admin",
+      "floor": 2,
+      "description": "Psikolojik danışmanlık ve rehberlik hizmetleri. Bireysel görüşme odası ve test uygulama alanı.",
+      "equipment": ["Görüşme Odası", "Test Materyalleri", "Bilgisayar"],
+      "capacity": 4,
+      "icon": "Briefcase"
+    },
+    {
+      "id": "room-9",
+      "name": "10-Bilişim Sınıfı",
+      "type": "classroom",
+      "floor": 2,
+      "description": "Bilişim Teknolojileri 10. sınıf dersliği. 26 öğrenci kapasiteli, modern donanımlı.",
+      "equipment": ["Akıllı Tahta", "Projeksiyon", "Öğrenci Dolapları"],
+      "capacity": 26,
+      "icon": "BookOpen"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "title": "Robotik Yarışması 2026",
+      "date": "2026-05-15",
+      "time": "10:00",
+      "location": "Bilişim Atölyesi",
+      "roomId": "room-1",
+      "orginazer": "Bilişim Kulübü",
+      "description": "Okul geneli robotik ve kodlama yarışması. Öğrenciler kendi tasarladıkları robotlarla parkur yarışı yapacak.",
+      "category": "yarisma",
+      "visibleTo": ["ogrenci", "ogretmen", "ziyaretci"]
+    },
+    {
+      "id": "event-2",
+      "title": "Kariyer Günleri: Teknoloji Sektörü",
+      "date": "2026-05-20",
+      "time": "13:30",
+      "location": "Konferans Salonu",
+      "roomId": "room-7",
+      "orginazer": "Rehberlik Servisi",
+      "description": "Yazılım, donanım ve savunma sanayi sektörlerinden profesyoneller öğrencilerle buluşuyor.",
+      "category": "seminer",
+      "visibleTo": ["ogrenci", "ogretmen"]
+    },
+    {
+      "id": "event-3",
+      "title": "CNC ile İmalat Workshop",
+      "date": "2026-05-25",
+      "time": "09:00",
+      "location": "Elektrik Atölyesi",
+      "roomId": "room-2",
+      "orginazer": "Elektrik-Elektronik Kulübü",
+      "description": "Uygulamalı CNC programlama ve parça üretim atölyesi. Katılım 20 kişi ile sınırlıdır.",
+      "category": "workshop",
+      "visibleTo": ["ogrenci", "ogretmen"]
+    }
+  ],
+  "clubs": [
+    {
+      "id": "club-1",
+      "name": "Bilişim ve Kodlama Kulübü",
+      "description": "Yazılım geliştirme, siber güvenlik ve yapay zeka alanlarında projeler üreten öğrenci topluluğu.",
+      "advisor": "Ahmet Yılmaz",
+      "meetingDay": "Çarşamba",
+      "roomId": "room-1",
+      "memberCount": 35,
+      "icon": "Code2"
+    },
+    {
+      "id": "club-2",
+      "name": "Elektrik-Elektronik Kulübü",
+      "description": "Devre tasarımı, robotik sistemler ve otomasyon projeleri geliştiren teknik kulüp.",
+      "advisor": "Mehmet Demir",
+      "meetingDay": "Perşembe",
+      "roomId": "room-2",
+      "memberCount": 28,
+      "icon": "Cpu"
+    }
+  ],
+  "schedule": [
+    { "day": "Pazartesi", "time": "08:30-09:15", "lesson": "Matematik", "classroom": "9-A Sınıfı", "roomId": "room-3", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "09:25-10:10", "lesson": "Bilişim Temelleri", "classroom": "Bilişim Atölyesi", "roomId": "room-1", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "10:20-11:05", "lesson": "Fizik", "classroom": "9-A Sınıfı", "roomId": "room-3", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "11:15-12:00", "lesson": "Programlama", "classroom": "Bilişim Atölyesi", "roomId": "room-1", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "12:00-12:45", "lesson": "Öğle Arası", "classroom": "Kantin", "roomId": "room-4", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "12:45-13:30", "lesson": "İngilizce", "classroom": "9-A Sınıfı", "roomId": "room-3", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "13:40-14:25", "lesson": "Beden Eğitimi", "classroom": "Konferans Salonu", "roomId": "room-7", "classGroup": "9-A" },
+    { "day": "Pazartesi", "time": "08:30-09:15", "lesson": "Veri Tabanı", "classroom": "Bilişim Atölyesi", "roomId": "room-1", "classGroup": "10-Bilişim" },
+    { "day": "Pazartesi", "time": "09:25-10:10", "lesson": "Matematik", "classroom": "10-Bilişim Sınıfı", "roomId": "room-9", "classGroup": "10-Bilişim" },
+    { "day": "Pazartesi", "time": "10:20-11:05", "lesson": "Web Tasarımı", "classroom": "Bilişim Atölyesi", "roomId": "room-1", "classGroup": "10-Bilişim" },
+    { "day": "Pazartesi", "time": "11:15-12:00", "lesson": "Elektronik", "classroom": "Elektrik Atölyesi", "roomId": "room-2", "classGroup": "10-Bilişim" },
+    { "day": "Salı", "time": "08:30-09:15", "lesson": "Matematik", "classroom": "9-A Sınıfı", "roomId": "room-3", "classGroup": "9-A" },
+    { "day": "Salı", "time": "09:25-10:10", "lesson": "Türk Dili", "classroom": "9-A Sınıfı", "roomId": "room-3", "classGroup": "9-A" }
+  ],
+  "chatChannels": [
+    {
+      "id": "channel-1",
+      "name": "9-A Sınıf Kanalı",
+      "classGroup": "9-A",
+      "createdBy": "teacher-1",
+      "type": "class"
+    },
+    {
+      "id": "channel-2",
+      "name": "10-Bilişim Sınıf Kanalı",
+      "classGroup": "10-Bilişim",
+      "createdBy": "teacher-2",
+      "type": "class"
+    },
+    {
+      "id": "channel-3",
+      "name": "Bilişim Kulübü",
+      "classGroup": "Genel",
+      "createdBy": "teacher-1",
+      "type": "club"
+    }
+  ],
+  "initialMessages": [
+    { "channelId": "channel-1", "id": "msg-1", "sender": "Öğretmen Ahmet Yılmaz", "senderRole": "teacher", "text": "9-A sınıfı hoş geldiniz! Bu kanal üzerinden ders notlarını ve ödevleri paylaşacağım.", "time": "08:30", "date": "2026-04-24", "file": null },
+    { "channelId": "channel-1", "id": "msg-2", "sender": "Öğrenci Ali", "senderRole": "student", "text": "Teşekkürler hocam!", "time": "08:32", "date": "2026-04-24", "file": null },
+    { "channelId": "channel-1", "id": "msg-3", "sender": "Öğretmen Ahmet Yılmaz", "senderRole": "teacher", "text": "Bu haftaki ödev soruları ektedir.", "time": "09:00", "date": "2026-04-24", "file": { "name": "Matematik_Odev_Hafta3.pdf", "type": "pdf", "size": "245 KB" } },
+    { "channelId": "channel-2", "id": "msg-4", "sender": "Öğretmen Mehmet Demir", "senderRole": "teacher", "text": "10-Bilişim, yarınki veri tabanı sınavına hazır mısınız?", "time": "10:15", "date": "2026-04-24", "file": null }
+  ],
+  "studentList": [
+    { "id": "stu-1", "name": "Ali Yılmaz", "classGroup": "9-A", "number": 101 },
+    { "id": "stu-2", "name": "Ayşe Demir", "classGroup": "9-A", "number": 102 },
+    { "id": "stu-3", "name": "Mehmet Kaya", "classGroup": "10-Bilişim", "number": 201 },
+    { "id": "stu-4", "name": "Zeynep Çelik", "classGroup": "10-Bilişim", "number": 202 }
+  ],
+  "schoolAchievements": [
+    { "id": "ach-1", "title": "TÜBİTAK 4006 Bilim Fuarı", "description": "Okulumuz bu yıl 15 proje ile TÜBİTAK 4006 Bilim Fuarı'na katılım hakkı kazandı.", "year": 2026 },
+    { "id": "ach-2", "title": "Teknofest Finalisti", "description": "Bilişim Kulübü öğrencilerimiz Teknofest İnsansız Hava Aracı kategorisinde finalist oldu.", "year": 2025 },
+    { "id": "ach-3", "title": "Mesleki Yeterlilik Sertifikası", "description": "12. sınıf öğrencilerimizin %92'si MEB onaylı mesleki yeterlilik sertifikası almaya hak kazandı.", "year": 2025 }
+  ]
+}
