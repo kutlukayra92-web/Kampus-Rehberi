@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { useCampus } from './context/CampusContext'
 import LandingScreen from './components/LandingScreen'
 import ChatBot from './components/ChatBot'
@@ -136,6 +137,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-slate-950 flex flex-col">
+      <Analytics />
       {/* Top Bar */}
       <header className="flex-shrink-0 px-4 py-3 flex items-center justify-between border-b border-white/5 bg-slate-950/90 backdrop-blur-xl z-30">
         <div>
