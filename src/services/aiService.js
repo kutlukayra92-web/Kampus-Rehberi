@@ -1,4 +1,4 @@
-const API_URL = '/api/v1/chat/completions'
+const API_URL = import.meta.env.VITE_API_URL || 'https://mino.redemption.pw/x/zai/glm-5/v1/chat/completions'
 
 export async function askGLM5(message, history = []) {
   const messages = [
@@ -32,6 +32,8 @@ Kurallar:
     })),
     { role: 'user', content: message },
   ]
+
+  console.log('İstek atılan URL:', API_URL)
 
   try {
     const response = await fetch(API_URL, {
